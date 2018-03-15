@@ -18,13 +18,7 @@ pip install -r requirements.txt
 
 即可安装本项目的依赖库`requests`与`bs4`。
 
-找到班级所需版本的脚本，直接使用
-
-```python
-pip install -r requirements.txt
-```
-
-依赖安装完成后，直接运行脚本即可。
+找到班级所需版本的脚本，直接运行脚本即可。
 
 ```python
 python crawl_from_x.py
