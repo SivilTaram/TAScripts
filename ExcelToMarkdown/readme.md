@@ -1,25 +1,18 @@
-# 使用说明
+# 概况
 
-本文件夹中的Scripts用于收集同学们学号、博客与Git账号的对应关系。
+本工具用于将Excel表格转换为Markdown语法，常在发表评分博客时使用。对开发者@fanfeilong 表示由衷感谢。
 
-1. `crawl_from_blog.py` 文件用于爬取博文下的评论。
-示例：http://www.cnblogs.com/easteast/p/7403491.html
+# 使用
 
-2. `crawl_from_class.py` 文件用于爬取班级博客下的评论。
-示例：https://edu.cnblogs.com/campus/nenu/2016SE_NENU/homework/1645
+在Windows平台下，使用命令行([如何使用?](https://blog.csdn.net/zuliang001/article/details/49705469))运行 `exceltk.exe` 文件，运行参数与说明如下，其中 `xxx.xlsx` 即要转换为MarkDown语法的Excel文件名。
 
-# 开始
+- 整个表格
+    - `exceltk.exe -t md -xls xxx.xls`
+    - `exceltk.exe -t md -xls xxx.xlsx`
 
-本项目使用python3编写，在安装好python3后，使用
+如果想指定生成某个sheet，可使用如下命令。
 
-```python
-pip install -r requirements.txt
-```
+- 指定sheet
+    - `exceltk.exe -t md -xls xx.xls -sheet sheetname`
+    - `exceltk.exe -t md -xls xx.xlsx -sheet sheetname`
 
-即可安装本项目的依赖库`requests`与`bs4`。
-
-找到班级所需版本的脚本，直接运行脚本即可。
-
-```python
-python crawl_from_x.py
-```
