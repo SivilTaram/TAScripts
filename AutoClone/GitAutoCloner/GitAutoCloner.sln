@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitAutoCloner", "GitAutoCloner\GitAutoCloner.csproj", "{CAA83CE6-4106-46DC-B55A-177C354B16BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAA83CE6-4106-46DC-B55A-177C354B16BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA83CE6-4106-46DC-B55A-177C354B16BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA83CE6-4106-46DC-B55A-177C354B16BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA83CE6-4106-46DC-B55A-177C354B16BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F82B7F6-F346-48E5-B95C-5AFA1B4ED2B6}
+	EndGlobalSection
+EndGlobal
