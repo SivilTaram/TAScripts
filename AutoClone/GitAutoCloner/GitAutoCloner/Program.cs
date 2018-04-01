@@ -67,10 +67,10 @@ namespace GitAutoCloner
         {
             Console.WriteLine("Usages: \n" +
                               "autoclone.exe -blog [blog file] -mode [mode] -num [number id] -pat [git pattern]\n\n" +
-                              "\t- 本功能用于从学生的作业中自动提取Github链接, 并将Git仓库Clone到文件夹 Projects 下, 错误日志在文件夹 Log 下, Github项目链接映射表在 RepoMap.txt 中。\n\n" +
-                              "\t- 文件 [blog file] 提供学号与作业地址的对应关系, 多行分开。如不指定该参数则默认为当前目录 BlogList.txt。\n\t 每行的格式如: 031502334\thttp://cnblogs.com/easteast/p/1234.html 【分隔符为\\t】\n\n" +
-                              "\t- 仓库模式 [git pattern] 提供仓库地址的正则表达式, 默认为克隆 Github, 样例: https://git.coding.net/.+\\.git" +
-                              "\t- 文本 [mode] 指定测试选用的模式，目前提供三种选择：\n\t\t- a : 跳过当前 Projects目录下已有工程, 分析其他同学的博客 ,并将项目克隆到本地。\n\t\t- w : 将 Projects 文件夹重命名,爬取所有学生的博客并将项目克隆到 Projects文件夹下。\n\n" +
+                              "\t- 本项目用于从学生的作业中自动提取Github链接, 并将Git仓库Clone到文件夹 Projects 下, 错误日志在文件夹 Log 下, Github项目链接映射表在 RepoMap.txt 中。\n\n" +
+                              "\t- 文件 [blog file] 提供学号与作业地址的对应关系, 多行分开。如不指定该参数则默认为当前目录 blog.txt。\n\t 每行的格式如: 031502334\thttp://cnblogs.com/easteast/p/1234.html 【分隔符为\\t】\n\n" +
+                              "\t- 仓库模式 [git pattern] 提供仓库地址的正则表达式, 默认为克隆 Coding.Net, 样例: https://git.coding.net/.+\\.git" +
+                              "\t- 文本 [mode] 指定测试选用的模式，目前提供两种选择：\n\t\t- a : 跳过当前 Projects目录下已有工程, 分析其他同学的博客 ,并将项目克隆到本地。\n\t\t- w : 将 Projects 文件夹重命名,爬取所有学生的博客并将项目克隆到 Projects文件夹下。\n\n" +
                               "\t- 学号 [number id] 提供单个学号, 当本参数存在时, 将只抓取单个同学的博客并重新克隆工程。\n\n");
         }
 
