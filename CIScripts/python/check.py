@@ -21,4 +21,8 @@ def check_structure(dir_path):
 
 if __name__ == '__main__':
     check_dir = sys.argv[1]
-    check_structure(check_dir)
+    try:
+        check_structure(check_dir)
+        print("文件目录测试通过 (3/3)")
+    except AssertionError as e:
+        print(e)
