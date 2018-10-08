@@ -21,8 +21,13 @@ def check_structure(dir_path):
 
 if __name__ == '__main__':
     check_dir = sys.argv[1]
+    log_file = open(sys.argv[2], "w", encoding="utf8")
     try:
         check_structure(check_dir)
-        print("文件目录测试通过 (3/3)")
+        log_file.write("文件目录测试通过 (3/3)")
+        sys.exit(0)
     except AssertionError as e:
-        print(e)
+        log_file.write(str(e))
+        sys.exit(-1)
+    finally:
+        log_file.close()
